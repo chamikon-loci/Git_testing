@@ -40,3 +40,5 @@ git push -u origin ชื่อbranch คือการนำโปรเจก
 git pull คือการดึง commit จาก server มา update ในเครื่อง
 
 git push คือการยัด commit จากเครื่อง ไป update บน server
+
+git clone ลิงก์urlclone คือการนำเอาโปรเจกต์จาก remote repository มาลงใน local repository
