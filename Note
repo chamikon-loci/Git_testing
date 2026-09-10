@@ -24,3 +24,14 @@ git reset --ตัวเลือก รหัสcommit คือการย้
 1.soft ใช้ลบ commit ทั้งหมดหลัง commit_id แล้วก็เอา commit นั้นไปอยู่ใน staging area
 2.mixed ใช้ลบ commit ทั้งหมดหลัง commit_id แล้วก็เอาไฟล์ที่เคยอยู่ใน commit นั้นกลับไป working directory หรือก็คือออกจาก staging area ไปด้วยเลย
 3.hard ใช้ลบ commit ทั้งหมดหล้ง commit_id และทำลายไฟล์ที่เคยอยู่ใน commit นั้นด้วย
+
+git branch การแสดงชื่อ branch 
+
+git checkout -b ชื่อbranch การสลับและสร้าง branch
+git checkout -d ชื่อbranch การลบ branch 
+git checkout ชื่อbranch การสลับไป branch อื่น
+
+git merge ชื่อbranch คือการรวมไฟล์ใน branch อื่นกับ branch คือกำลังชี้อยู่
+
+git remote add origin ลิงก์urlgithub คือการเชื่อมโยง server 
+git push -u origin ชื่อbranch คือการนำโปรเจกต์ในเครื่องไปใส่ใน server
