@@ -1,0 +1,18 @@
+Git มีวงจรแบบนี้: โฟลเดอร์ที่กำลังตรวจจับการเปลี่ยนแปลง => นำไปใส่ staging area เก็บประวัติการแก้ไข => เสร็จแล้วนำไปใส่ใน local repository ถาวรในเครื่อง => เสร็จแล้วนำไปลงใน server
+
+คำสั่ง
+git init ใช้ในโฟลเดอร์ที่จะตรวจจับการเปลี่ยนแปลงไฟล์
+
+git add ชื่อไฟล์ คือเอาไฟล์นี้ลง staging area
+git add *.นามสกุลไฟล์ คือเอาทุกไฟล์ที่นามสกุลนี้ลง staging area
+git add . เอาไฟล์ทั้งหมดลง staging area
+
+git status คือดูสถานะของไฟล์ซึ่งมีดังนี้ 1.modified คืออยู่ใน stagin area และแก้ไขแล้วแต่ยังไม่ได้เอาลง local repository 2.staged คือไฟล์อยู่ใน staging area แล้ว 3.commited คือเอาลง local repository แล้ว
+
+git log คือดูประวัติการเปลี่ยนแปลงที่เกิดขึ้น
+
+git commit -m "ข้อความ" คือเอาไฟล์ทั้งหมดใน staging area ลง local repository พร้อมข้อความอธิบาย
+
+git diff รหัสcommit คือ
+git diff รหัสcommit1 รหัสcommit2 
+สีสถานะ: - คือบรรทัดเดิมก่อนถูกแก้ไขและถูกลบ + คือบรรทัดใหม่ที่ถูกแก้ไขและเพิ่ม
