@@ -33,5 +33,10 @@ git checkout ชื่อbranch การสลับไป branch อื่น
 
 git merge ชื่อbranch คือการรวมไฟล์ใน branch อื่นกับ branch คือกำลังชี้อยู่
 
+git branch -M ชื่อbranch คือการเปลี่ยนชื่อ branch
 git remote add origin ลิงก์urlgithub คือการเชื่อมโยง server 
 git push -u origin ชื่อbranch คือการนำโปรเจกต์ในเครื่องไปใส่ใน server
+
+git pull คือการดึง commit จาก server มา update ในเครื่อง
+
+git push คือการยัด commit จากเครื่อง ไป update บน server
